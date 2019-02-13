@@ -14,7 +14,7 @@
       <form id="addTeacherForm" role="form" method="get" action="/add">
 		<h3>Choose a Skill</h3>
     <div class = "form-group">
-      <label for="skill"
+      <label for="skill">
     <select name="Skills">
       <option value="Tennis">Tennis</option>
       <option value="Surfing">Surfing</option>
@@ -27,15 +27,15 @@
     </div>
 	<div class="form-group">
 	  <label for="address">Practice Location: </label>
-	  <input type="text" class="form-control" id="address" placeholder="Address" address="address">
+	  <input type="text" class="form-control" id="address" placeholder="Address to meet" address="address">
 	  </div>
 	  <div class="form-group">
 	   <label for="description">Bio:</label>
-	    <input type="text" class="form-control" id="Bio" placeholder="Bio" name="Bio">
+	    <textarea type="text" class="form-control" id="description" placeholder="Tell us about yourself!" description="Description" style="height:200px"></textarea>
 	    </div>
 	   <div class="form-group">
 	   <label for="rate"> Rate per hour: </label>
-	   <input type="text" class="form-control" id="rate" placeholder="0" rate="rate">
+	   <input type="text" class="form-control" id="rate" placeholder="Rate in USD/hour" rate="rate">
 	   </div>
 	  <input type="submit" id="submitBtn" class="btn btn-default" value="Submit Listing"></input>
 	</form>
@@ -52,6 +52,7 @@
   		</button>
   	</div>
 	
+
 	
         <script src="https://code.jquery.com/jquery.js"></script>
   <!-- Include all compiled plugins (blelow), or include individual files as needed -->
