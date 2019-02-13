@@ -15,3 +15,74 @@ h1{
 	height: 100px;
 	border-radius: 100px;
 }
+
+
+
+///Code from A5
+#container{
+	width:500px;
+	margin:0px auto;
+	font-family: Arial, "Times New Roman";
+	font-size: 20px;
+}
+
+.profile{
+	width:250px;
+	float:right;
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	margin-left: 80%; 
+}
+
+.distance {
+	border: 0.5px solid black;
+	border-radius: 200px;
+	width: 100px;
+	font-size: 12px;
+	padding: 2px 2px 2px 2px;
+}
+
+.paragraph{
+	border: 2px solid black;
+	border-radius:5px;
+	color: black;
+	margin-right:10px;
+	padding: 10px 10px 10px 10px;
+	font-size: 14px;
+
+}
+.img{
+	border-radius: 150px;
+	width: 100px;
+}
+
+.rating {
+	border-radius: 150px;
+	width: 100px;
+}
+
+a{
+	text-decoration: none;
+	color:#cc0000;
+}
+
+a.click,div.hireButton{
+	float: below;
+	border-radius:5px;
+	color: black;
+	align-self: center;
+	padding: 15px 15px 15px 100px;
+	font-size: 20px;
+	font-variant: small-caps;
+}
+
+a.click,div.button{
+	float: left;
+}
+a.click{
+	border-radius:5px;
+	color: black;
+	margin-right:10px;
+	padding: 10px 10px 10px 10px;
+}
+

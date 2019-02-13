@@ -12,7 +12,13 @@ var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
 
+
+// Suha route other files
+var activitybutton = require('./routes/activitybutton');
+var teachbutton = require('./routes/teachbutton');
+
 var app = express();
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -37,6 +43,12 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
+
+
+//Suha's routes to other files
+app.get('/learn', activitybutton.view)
+app.get('/teach', teachbutton.view)
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
