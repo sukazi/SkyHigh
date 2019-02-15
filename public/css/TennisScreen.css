@@ -62,3 +62,7 @@ h1{
 .dropdown:hover .dropdown-button{
 	background-color:gray;
 }
+
+.checked{
+	color:orange;
+}
