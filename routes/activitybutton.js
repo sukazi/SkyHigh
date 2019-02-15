@@ -2,6 +2,9 @@
 exports.view = function(req,res){
 	res.render('ActivityScreen.handlebars');
 }
+exports.view = function(req, res){
+  res.render("ActivityScreen", {"name": "Gillian Grennan"});
+};
 
 function searchBar(){
 	var input, filter, ul, li, a , i, txtValue;

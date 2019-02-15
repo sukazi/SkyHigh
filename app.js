@@ -16,7 +16,9 @@ var index = require('./routes/index');
 // Suha route other files
 var activitybutton = require('./routes/activitybutton');
 var teachbutton = require('./routes/teachbutton');
-var profilebutton = require('./views/profile')
+var profilebutton = require('./routes/profilebutton');
+var homebutton = require('./routes/homebutton');
+var tennislink = require('./routes/tennislink');
 
 var app = express();
 
@@ -50,6 +52,8 @@ app.get('/', index.view);
 app.get('/learn', activitybutton.view)
 app.get('/teach', teachbutton.view)
 app.get('/profile', profilebutton.view)
+app.get('/home', homebutton.view)
+app.get('/tennis', tennislink.view)
 
 
 http.createServer(app).listen(app.get('port'), function(){

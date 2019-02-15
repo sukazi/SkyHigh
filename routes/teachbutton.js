@@ -1,4 +1,7 @@
 
 exports.view = function(req,res){
-	res.render('TeachScreen.handlebars')
+	res.render('LookingToTeach.handlebars')
+}
+exports.view = function(req, res){
+  res.render("LookingToTeach", {"name": "Gillian Grennan"});
 }

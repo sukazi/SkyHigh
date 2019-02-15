@@ -2,13 +2,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Looking To Teach</title>
-	<link rel="stylesheet" type="text/css" href= "/css/HomeScreen.css">
+	<link rel="stylesheet" type="text/css" href= "/css/Teach.css">
 	<script src="/js/app.js" type=:"text/javascript" > </script>
 
 </head>
 
 <body>
-	<h1> Looking to Teach </h1>
+	<h1> Looking To Teach </h1>
+      <div class = "profile"> 
+        <a href = "/profile"> <img src = /images/profile.pic class = "img" > </a>
+        <h3> {{name}} </h3>
+      </div>
+
   <div class = "container">
       <div class = "Teach">
       <form id="addTeacherForm" role="form" method="get" action="/add">
@@ -42,10 +47,10 @@
 	
 	<div class ="button" id = "button2">
   		<button id="newPage1" >
-  		<a href= "HomeScreen.handlebars" class="click">Back</a>
+  		<a href= "/home" class="click">Back</a>
   		</button>
   		<button id="newPage1">
-  		<a href= "HomeScreen.handlebars" class="click">Home</a>
+  		<a href= "/home" class="click">Home</a>
   		</button>
   		<button id="newPage1" >
   		<a href= "Help.handlebars" class="click">Help</a>
