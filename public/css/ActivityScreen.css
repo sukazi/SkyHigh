@@ -64,7 +64,7 @@ h2{
 .dropdown:hover .dropdown-content{
 	display: block;
 }
-.dropdown:hover .dropdonw-button{
+.dropdown:hover .dropdown-button{
 	background-color:gray;
 }
 

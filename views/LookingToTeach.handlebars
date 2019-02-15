@@ -10,7 +10,13 @@
 <body>
   <div class = "header">
 	<h1> Looking to Teach </h1>
+  <div class = "profile"> 
+        <!-- Turning profile pic into link -->
+        <a href = "/profile"> <img src = /images/profile.pic class = "img" > </a>
+        <h3> {{name}} </h3>
+      </div>
   </div>
+
   <div class = "container">
       <div class = "Teach">
       <form id="addTeacherForm" role="form" method="get" action="/add">
@@ -62,10 +68,10 @@
 
       <div class ="button" id = "button2">
         <button id="newPage1" >
-          <a href= "/" class="click">Back</a>
+          <a href= "/home" class="click">Back</a>
         </button>
         <button id="newPage1" >
-          <a href= "/" class="click">Home</a>
+          <a href= "/home" class="click">Home</a>
         </button>
         <button id="newPage1" >
           <a href= "/help" class="click">Help</a>
