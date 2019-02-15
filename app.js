@@ -22,6 +22,7 @@ var tennislink = require('./routes/tennislink');
 var submitbutton = require('./routes/submitbutton');
 var helpbutton = require('./routes/helpbutton');
 var hirelink = require('./routes/hirelink');
+var hiresubmit = require('./routes/hiresubmit');
 
 var app = express();
 
@@ -60,6 +61,7 @@ app.get('/tennis', tennislink.view)
 app.get('/submit', submitbutton.view)
 app.get('/help', helpbutton.view)
 app.get('/hire', hirelink.view)
+app.get('/hiresubmit', hiresubmit.view)
 
 
 http.createServer(app).listen(app.get('port'), function(){

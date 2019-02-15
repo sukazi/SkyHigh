@@ -3,7 +3,7 @@
   <head>
     <title> hirescreen </title>
     <meta charset="UTF-8">
-    <link rel ="stylesheet" type="text/css" href = "/css/HireScreen.css">
+    <link rel ="stylesheet" type="text/css" href = "/css/HomeScreen.css">
   </head>
 
   <body>
@@ -24,30 +24,30 @@
 
 
 
-  		<div id = "container">
-  			<div class = "paragraph">
-  			<p>
-  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus enim diam, adipiscing sodales sem ut, tristique suscipit odio. Nam mollis ipsum et venenatis euismod. Aliquam erat volutpat. Praesent placerat condimentum tristique. Morbi egestas dapibus viverra. Mauris sit amet dignissim risus, non elementum eros. Donec urna dui, placerat et feugiat non, vulputate in ipsum. Quisque dignissim pulvinar nisi.
-  			</p>
-  		</div>
-
-  		<div>
-  				<div class ="hireButton" id = "button1">
-  					<button id="newPage" >
-  				<a href= "actualhire.html" class="click">Hire</a>
-  			</button>
-
-  		</div>
+  		<h3>Send a Message to Book a Lesson</h3>
+        <form id= "helpform" role="form" method="get" action="/add">
+        <div class = "form-group">
+       <div class = "col-75">
+	    <label for="help"> Message: </label>
+       <textarea type ="text" class="form-control" id="help" placeholder="Hi, I saw your listing on SkySight..." help="help" style="height:5%, width: 75%"></textarea>
+    	<div class="row">
+        <div class = "button">
+        <button id = "newPage1">
+     <a href="/hiresubmit" class="click">Send Message</a>
+       </button>
+     </div>
+    </div>
+    </form>
 
   		<div class ="button" id = "button2">
   			<button id="newPage1" >
-  				<a href= "tennislessons.html" class="click">Back</a>
+  				<a href= "/tennis" class="click">Back</a>
   			</button>
   			<button id="newPage1" >
-  				<a href= "HomeScreen.html" class="click">Home</a>
+  				<a href= "/home" class="click">Home</a>
   			</button>
   			<button id="newPage1" >
-  				<a href= "Help.html" class="click">Help</a>
+  				<a href= "/help" class="click">Help</a>
   			</button>
   		</div>
   	</div>
