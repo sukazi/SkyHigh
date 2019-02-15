@@ -17,47 +17,63 @@
   <div class = "container">
       <div class = "Teach">
       <form id="addTeacherForm" role="form" method="get" action="/add">
-		<h3>Choose a Skill</h3>
     <div class = "form-group">
-      <label for="skill">
+      <div class = "col-75">
+      <label for="skill">Choose a skill: </label>
     <select name="Skills">
       <option value="Tennis">Tennis</option>
       <option value="Surfing">Surfing</option>
       <option value="Piano">Piano</option>
       <option value="Spanish">Spanish</option>
+      <option value ="Coding">Coding</option>
+      <option value ="Dance">Dance</option>
+      <option value ="Photography">Photography</option>
       <option value="Other">Other</option>
     </select>
-    <h4>If other, enter skill: </h4>
+  </div>
+</div>
+    <div class = "col-25">
+    <label for="skill">If other: </label>
     <input type ="text" class="form-control" id="skill" placeholder="n/a" skill="skill">
     </div>
 	<div class="form-group">
+    <div class = "col-75">
 	  <label for="address">Practice Location: </label>
 	  <input type="text" class="form-control" id="address" placeholder="Address to meet" address="address">
 	  </div>
+  </div>
 	  <div class="form-group">
-	   <label for="description">Bio:</label>
-	    <textarea type="text" class="form-control" id="description" placeholder="Tell us about yourself!" description="Description" style="height:200px"></textarea>
+      <div class="col-75">
+	   <label for="description">Bio: </label>
+	    <textarea type="text" class="form-control" id="description" placeholder="Tell us about yourself!" description="description" style="height:200px"></textarea>
 	    </div>
+    </div>
 	   <div class="form-group">
+      <div class="col-75">
 	   <label for="rate"> Rate per hour: </label>
 	   <input type="text" class="form-control" id="rate" placeholder="Rate in USD/hour" rate="rate">
 	   </div>
-	  <input type="submit" id="submitBtn" class="btn btn-default" value="Submit Listing"></input>
+   </div>
+   <div>
+    <div class = "button">
+      <button id = "newPage1">
+    <a href="/submit" class="click">Submit</a>
+  </button>
+  </div>
+  </div>
 	</form>
-	
-	<div class ="button" id = "button2">
-  		<button id="newPage1" >
-  		<a href= "/home" class="click">Back</a>
-  		</button>
-  		<button id="newPage1">
-  		<a href= "/home" class="click">Home</a>
-  		</button>
-  		<button id="newPage1" >
-  		<a href= "Help.handlebars" class="click">Help</a>
-  		</button>
-  	</div>
-	
 
+      <div class ="button" id = "button2">
+        <button id="newPage1" >
+          <a href= "/" class="click">Back</a>
+        </button>
+        <button id="newPage1" >
+          <a href= "/" class="click">Home</a>
+        </button>
+        <button id="newPage1" >
+          <a href= "/help" class="click">Help</a>
+        </button>
+      </div>
 	
         <script src="https://code.jquery.com/jquery.js"></script>
   <!-- Include all compiled plugins (blelow), or include individual files as needed -->
