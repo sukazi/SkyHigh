@@ -19,6 +19,8 @@ var teachbutton = require('./routes/teachbutton');
 var profilebutton = require('./routes/profilebutton');
 var homebutton = require('./routes/homebutton');
 var tennislink = require('./routes/tennislink');
+var submitbutton = require('./routes/submitbutton');
+var helpbutton = require('./routes/helpbutton');
 
 var app = express();
 
@@ -54,6 +56,8 @@ app.get('/teach', teachbutton.view)
 app.get('/profile', profilebutton.view)
 app.get('/home', homebutton.view)
 app.get('/tennis', tennislink.view)
+app.get('/submit', submitbutton.view)
+app.get('/help', helpbutton.view)
 
 
 http.createServer(app).listen(app.get('port'), function(){
