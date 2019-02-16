@@ -5,6 +5,6 @@
 
 //JSON
 exports.view = function(req, res){
-  res.render("index", {"name": "Gillian Grennan"});
+  res.render("HomePage", {"name": "Gillian Grennan"});
 };
 
