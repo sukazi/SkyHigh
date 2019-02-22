@@ -5,10 +5,14 @@
 	<link rel="stylesheet" type="text/css" href= "/css/homePage.css">
 	<script src="/js/app.js" type="text/javascript" > </script>
   <script src="/js/homePage.js" type="text/javascript"> </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
 
 <body onload="startTime()">
+  
 
         <!-- NAVIGATION BAR AT THE TOP -->
 
@@ -27,30 +31,25 @@
         </nav>
 
 
-	<h1> Home Page </h1>
       <div class = "profile"> 
         <!-- Turning profile pic into link -->
         <a href = "/profile"> <img src = /images/profile.pic class = "img" > </a>
         <h3> {{name}} </h3>
       </div>
         
-
-      
-
-      <div class = "button" id=button1>
-        <button id="newPage"> 
-          <a href="/teach"> Looking to teach </a>
-        </button>
+<div class="container-fluid">
+    
+      <div type="button" class = "button" id=button1>
+          <a href="/teach" class="button">  Teach</a>
+        
       </div>
 
-      <div class = "button" id=button2>
-        <button id="newPage" > 
-          <a href="/learn"> Looking to Learn </a>
-        </button>
+      <div type = "button" class="button" id=button2>
+          <a href="/learn" class="button">Learn</a>
       </div>
-
+  </div>
   
-
+<!--
       <div class = "calendar-body">
           <div class=container> 
               <div class="card">
@@ -125,15 +124,17 @@
                   </div>
                 </div>
                 <div class="back">
-                  <!---<div class="contentback">
+                  <!-<div class="contentback">
                     <div class="backcontainer">
                       hhh
                     </div>
-                  </div>--->
+                  </div>->
                 </div>
               </div>
           </div> 
         </div>  
+
+      -->
         <script src="https://code.jquery.com/jquery.js"></script>
   <!-- Include all compiled plugins (blelow), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
