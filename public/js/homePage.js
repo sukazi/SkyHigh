@@ -52,3 +52,11 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
 }
+
+$("HomePage").ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});

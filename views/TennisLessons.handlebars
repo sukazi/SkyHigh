@@ -23,15 +23,21 @@
       </div>
 
       <div class = "container">
-        <!--
-        <div id="{{id}}">
-            <h3> {{userName}}<h3>
-            <img src = /images/{{image}} class = "img"> 
-            <span class="fa fa-star checked"></span>
-            <h4> {{distance}} <h4>
-            <p> {{bio}} </p>
-        </div> -->
+        <a href="/hire">
+          <button class = "click" id="btn1">
+            <div id="{{id}}">
+              {{#each container}}
+                <h3> {{this.userName}}</h3>
+                <img src = "/images/{{this.image}}" class = "img"> 
+                <span class="fa fa-star checked"></span>
+                <h4> {{this.distance}} </h4>
+                <p> {{this.bio}} </p>
+              {{/each}}
+            </div> 
+          </button>
+        </a>   
         
+      <!--
         <div id="instructor1">
           <a href="/hire"> 
             <button class = "click" id="btn1">
@@ -82,6 +88,8 @@
             </button>
           </a>
         </div> 
+
+        -->
 
       </div>
 
