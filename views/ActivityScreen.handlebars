@@ -3,7 +3,7 @@
   <head>
     <title> hirescreen </title>
     <meta charset="UTF-8">
-    <link rel ="stylesheet" type="text/css" href = "/css/ActivityScreen.css">
+    <link rel ="stylesheet" type="text/css" href = "/css/HomeScreen.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
@@ -17,9 +17,9 @@
         <h3> {{name}} </h3>
       </div>
 
-      <input type="text" id="myInput" onkeyup="searchBar()" placeholder="Search" title="Type in a name"> 
+     <!-- <input type="text" id="myInput" onkeyup="searchBar()" placeholder="Search" title="Type in a name"> -->
 
-      <div class="dropdown">
+      <!--<div class="dropdown">
       <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Activity <span class="caret"></span></button>
 
       <ul class="dropdown-menu">
@@ -67,13 +67,61 @@
 
       </ul>
     </div>
+-->
+<div class = "dropdown">
+        <button class = "dropdown-button"> Activity </button>
+        <div class = "dropdown-content">
 
-      <div class ="buttons">
-      <button id="newPage1" > <a href= "/home" class="click">Back</a> </button>
+          <div class = "dropdown1">
+            <button class= "dropdown-button1"> <a href = "#"> Art </a></button>
+            <div class = "dropdown-subcontent1"> 
+              <a href = "#"> Drawing </a>
+              <a href = "#"> Painting </a>
+              <a href = "#"> Photography </a>
+            </div>
+          </div>
 
-      <button id="newPage1"> <a href= "/home" class="click">Home</a></button>
+          <div class = "dropdown2">
+            <button class= "dropdown-button2"> <a href = "#"> Academics </a></button>
+            <div class = "dropdown-subcontent2"> 
+              <a href = "#"> English </a>
+              <a href = "#"> Math </a>
+              <a href = "#"> Programming </a>
+              <a href = "#"> Science </a>
+            </div>
+          </div>
 
-      <button id="newPage1" > <a href= "/help" class="click">Help</a></button>
+          <div class = "dropdown3">
+            <button class= "dropdown-button3"> <a href = "#"> Music </a></button>
+            <div class = "dropdown-subcontent3"> 
+              <a href = "#"> Drums </a>
+              <a href = "#"> Flute </a>
+              <a href = "#"> Guitar </a>
+              <a href = "#"> Piano </a>
+            </div>
+          </div>
+
+          <div class = "dropdown4">
+            <button class= "dropdown-button4"> <a href = "#"> Sports </a></button>
+            <div class = "dropdown-subcontent4"> 
+              <a href = "#"> Dance </a>
+              <a href = "#"> Golf </a>
+              <a href = "#"> Surfing </a>
+              <a href = "/tennis"> Tennis </a>
+            </div>
+          </div>
+
+
+          <a href = "#"> Other </a>
+        </div>
+      </div>
+
+      <div>
+      <button id="newPage1" class = "button"> <a href= "/home" class="click">Back</a> </button>
+
+      <button id="newPage1" class = "button"> <a href= "/home" class="click">Home</a></button>
+
+      <button id="newPage1" class = "button"> <a href= "/help" class="click">Help</a></button>
     </div>
   
 
