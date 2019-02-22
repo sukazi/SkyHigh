@@ -1,32 +1,8 @@
-$(document).ready(function(){
-  // Extract the text from the template
-  var raw_template = $('.card').html();
-  // Complile that into an handlebars template
-  var template = Handlebars.compile(raw_template);
-  // Retrieve the placeHolder where the posts will be displayed
-  var placeHolder = $(".card");
-  // Fetch all portfolio items data from the server in JSON
-  $.get(userData, function(data){
-    console.log ('get status???');
-    $(this).each(data, function(index, element){
-      // Generate the HTML for each post
-      var html = template(element);
-      // Render the posts into the page
-      placeHolder.append(html);
-    }); // end each
-  }); // end get
-}); // end ready
-
-
-
-
-
-
 exports.view = function(req, res){
   res.render("TennisLessons", data);
 };
 
-var userData = {
+var data = {
 	"name": "Gillian Grennan",
 	"card": [{
 					"id": "card1",
