@@ -91,6 +91,7 @@ h4 {
   display: inline-block;
   font-size: 25px;
   margin-top: 15px;
+  right: 200px;
 
 }
 
@@ -352,5 +353,19 @@ input[type="text"] {
 }
 .dropdown:hover .dropdown-button{
   background-color:gray;
+}
+
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+
+.box a[id = "forgotpassword"]{
+  position: fixed;
+  bottom:10px;
+  right:20px;
+  height:20px;
+  width:250px;
+  text-align: right;
+  color: #808080
 }
 
