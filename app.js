@@ -23,6 +23,8 @@ var submitbutton = require('./routes/submitbutton');
 var helpbutton = require('./routes/helpbutton');
 var hirelink = require('./routes/hirelink');
 var hiresubmit = require('./routes/hiresubmit');
+var edit = require('./routes/edit');
+var homeB = require('./routes/homeB');
 
 var app = express();
 
@@ -62,6 +64,8 @@ app.get('/submit', submitbutton.view)
 app.get('/help', helpbutton.view)
 app.get('/hire', hirelink.view)
 app.get('/hiresubmit', hiresubmit.view)
+app.get('/edit',edit.view)
+app.get('/homeB',homeB.view)
 
 
 http.createServer(app).listen(app.get('port'), function(){

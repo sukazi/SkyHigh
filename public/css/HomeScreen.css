@@ -10,12 +10,67 @@ body{
 h1{
 	margin: 100px;
 	opacity: .5;
+  color: #145252;
 }
 h2{
 	margin: 200px;
 	text-align: left;
 	font-size: 2rem;
 }
+
+h4 {
+  float: right;
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-right: 200px;
+  position: relative;
+  width: 200px;
+  margin-inline-start: auto;
+  font-size: 45px; 
+  color: #145252;
+}
+
+textarea[type="text"] {
+    font-size:25px;
+}
+
+.starBox {
+  margin-right: 300px;
+  width: 100%;
+  height: 35%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  max-width: 400px;
+  max-height: 300px;
+  margin-left: 20px;
+  margin-inline-start: auto;
+}
+
+.infoBox {
+ right: 10px;
+  background-color: #adebeb;
+  width: 55%;
+  height: 35%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-inline-start: auto;
+  padding: 10px;
+  margin-right: 30px;
+}
+
+.ProfileBox {
+  right: 10px;
+  background-color: #adebeb;
+  width: 55%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-inline-start: auto;
+  padding: 10px;
+  margin-right: 30px;
+}
+
 .profile{
 	float: right;
 	display: inline;
@@ -29,18 +84,40 @@ h2{
 	height: 100px;
 	border-radius: 100px;
 }
+
 .button {
-	padding: 10px 10px 10px 10px;
-	margin: 10px 10px 10px 200px;
-	float:left;
-	height: .5rem;
+  background-color: #008CBA; /* Blue */
+  border: solid;
+  border-color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 15px;
+  right: 200px;
+
 }
+
 a.click{
 	border-radius:5px;
-	color: black;
-	padding: 10px 10px 10px 10px;
-	float: left;
+  color: solid black;
+  padding: 10px 10px 10px 10px;
+  float: left;
 }
+
+a.button {
+  border-radius:5px;
+  color: white;
+  font-size: 22px;
+}
+
+a.submit {
+  border-radius:5px;
+  color: white;
+  font-size: 22px;
+}
+
 a{
 	text-decoration: none;
 	color:#cc0000;
@@ -105,12 +182,49 @@ p.answer {
 }
 
 .container {
-	border: solid black;
-	background: #f1f1f1;
+	border-color: #239090;
+  border-style: solid;
+	background: #d6f5f5;
 	width: 75%;
-	height: 35%;
 	margin-left: 100px;
+  margin-right: 100px;
 	overflow-y: scroll;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.containerHelp {
+  border-color: #239090;
+  border-style: solid;
+  background: #d6f5f5;
+  width: 75%;
+  height:40%;
+  margin-left: 100px;
+  margin-right: 100px;
+  overflow-y: scroll;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.box {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  overflow-x: scroll;
+  max-height: 200px;
+  margin-left: 20px;
+}
+
+.BioBox {
+  border-color: #5F9EA0;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #ebfafa;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  overflow-x: scroll;
+  max-height: 200px;
+  margin-left: 20px;
+  font-color: #248f8f;
 }
 
 /* Floating column for labels: 25% width */
@@ -126,6 +240,30 @@ p.answer {
   width: 75%;
   margin-top: 6px;
 }
+
+.col-100 {
+  float: left;
+  right: 10px;
+  left: 10px;
+  margin-top: 6px;
+  width: 800px;
+}
+
+textarea.paragraph {
+  right: 10px;
+  left: 200px;
+  margin-top: 6px;
+  width: 500px;
+}
+
+textarea.text {
+  font-size: 18px;
+}
+
+.checked{
+  color:orange;
+}
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
   background-color: #ccc;
@@ -143,6 +281,18 @@ p.answer {
 	}
 }
 
+label.message {
+  color: #145252;
+}
+
+label.hire {
+  margin-top: 6px;
+  float: left;
+  color: #145252;
+  margin-right: 5px;
+  font-style: bold;
+
+}
 
 .row:after {
   content: "";
@@ -158,4 +308,354 @@ p.answer {
   background-color: #f1f1f1;
 }
 
+.hire-pic{
+  width: 230px;
+  height: 300px;
+  border-radius: 100px;
+  position: inline-block;
+  float:left;
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-right: 10px;
+  display: inline;
+}
 
+
+textarea::-webkit-input-placeholder {
+  font-size: 22px;
+}
+
+textarea.text {
+  width: 500px;
+  float: center;
+  margin-left: 150px;
+}
+
+input[type="text"] {
+    font-size:25px;
+}
+
+.dropdown-button{
+  background-color: blue;
+  color:white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown{
+  postition: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: lightblue;
+  min-width:160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+}
+.dropdown-content a:hover {
+  background-color: gray;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.dropdown:hover .dropdown-button{
+  background-color:gray;
+}
+
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+
+.box a[id = "forgotpassword"]{
+  position: fixed;
+  bottom:10px;
+  right:20px;
+  height:20px;
+  width:250px;
+  text-align: right;
+  color: #808080
+}
+
+/* Top Menu Bar */
+
+/*
+body {
+  background: #212121;
+  font-size:22px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  word-wrap:break-word !important;
+  font-family: 'Open Sans', sans-serif;
+  }
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #FFF;
+} 
+
+*/
+
+h3 {
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #FFF;
+}
+
+h3 a {
+  color: #FFF;
+}
+
+a {
+  color: #FFF;
+}
+
+h1 {
+  margin-top: 100px;
+  text-align:center;
+  font-size:60px;
+  line-height: 70px;
+  font-family: 'Bree Serif', 'serif';
+  }
+
+#container {
+  margin: 0 auto;
+  max-width: 890px;
+}
+
+p {
+  text-align: center;
+}
+
+.toggle,
+[id^=drop] {
+  display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+  margin:0;
+  padding: 0;
+  background-color: black;
+  height: 100;
+}
+
+#logo {
+  display: block;
+  padding: 0 30px;
+  float: left;
+  left: 200px;
+  font-size:40px;
+  line-height: 60px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+  float: right;
+  padding:0;
+  margin:0;
+  list-style: none;
+  position: relative;
+  }
+  
+/* Positioning the navigation items inline */
+nav ul li {
+  margin: 0px;
+  display:inline-block;
+  float: left;
+  background-color: #023160;
+  }
+
+/* Styling the links */
+nav a {
+  display:block;
+  padding:22px 20px;  
+  color:#FFF;
+  font-size:25px;
+  text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+  background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+  display: none;
+  position: absolute; 
+  /* has to be the same number as the "line-height" of "nav a" */
+  top: 60px; 
+}
+  
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display:inherit;
+}
+  
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers 
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+  position: relative;
+  top:-60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */ 
+  left:170px; 
+}
+
+  
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .toggle + a,
+  .menu {
+    display: none;
+  }
+
+  /* Styling the toggle lable */
+  .toggle {
+    display: block;
+    background-color: #000000;
+    padding:14px 20px;  
+    color:#FFF;
+    font-size:17px;
+    text-decoration:none;
+    border:none;
+  }
+
+  .toggle:hover {
+    background-color: #000000;
+  }
+
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^=drop]:checked + ul {
+    display: block;
+  }
+
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+    }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: #000000;
+  }
+  
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a{
+    padding:14px 20px;  
+    color:#FFF;
+    font-size:17px; 
+  }
+  
+  
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background-color: #212121; 
+  }
+
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position:static;
+    color: #ffffff;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+    
+  /* Hide menus on hover */
+  nav ul ul li:hover > ul,
+  nav ul li:hover > ul {
+    display: none;
+  }
+    
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */ 
+
+  }
+
+}
+
+@media all and (max-width : 330px) {
+
+  nav ul li {
+    display:block;
+    width: 94%;
+  }
+
+}

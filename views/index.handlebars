@@ -5,6 +5,8 @@
 		<meta charset="utf-8">
 		<title>Animated Login Form</title>
 		<link rel="stylesheet" href="css/index.css">
+		{{> facebook}}
+	<script src="/js/facebook.js"></script>
 	</head>
 	<body>
 
@@ -12,7 +14,7 @@
 			<!--<img src="images/triton.png"> -->
 	  </div>
 
-		<form class = "box" action="/home">
+		<form class = "box" action="/homeB">
 			<div class="login">
 
 			<h1>Login</h1>
@@ -20,6 +22,10 @@
 			<input type="password" name="" placeholder="Password" required>
 			<input type="submit" name="" value="Login">
 
+		<p class="facebookLogin">
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
+		</p>
 
 		<div class="create">
 			<a href="create_account.html" id="createacc">Create Account</a>
