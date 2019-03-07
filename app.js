@@ -9,6 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var homepage = require('./routes/homepage');
 // Example route
 // var user = require('./routes/user');
 
@@ -50,6 +51,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+//app.get('/', homepage.view)
+//app.get('/viewAlt', homepage.viewAlt)
 app.get('/viewAlt', index.viewAlt)
 // Example route
 // app.get('/users', user.list);
@@ -66,7 +69,8 @@ app.get('/help', helpbutton.view)
 app.get('/hire', hirelink.view)
 app.get('/hiresubmit', hiresubmit.view)
 app.get('/edit',edit.view)
-app.get('/homeB',homeB.view)
+app.get('/homeB', homeB.view)
+//app.get('/homeB/viewAlt', homeB.viewAlt)
 
 
 http.createServer(app).listen(app.get('port'), function(){

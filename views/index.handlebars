@@ -7,8 +7,23 @@
 		<link rel="stylesheet" href="css/index.css">
 		{{> facebook}}
 	<script src="/js/facebook.js"></script>
-	
+
+	<!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-135645728-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
+
 	</head>
+
+	{{#if viewAlt}}
+
 	<body>
 
 		<div id="logo">
@@ -22,6 +37,7 @@
 		  <input type="text" name="" placeholder="Username" required>
 			<input type="password" name="" placeholder="Password" required>
 			<input type="submit" name="" value="Login">
+			<button type="button" onclick="ga('send', 'event', 'view_profile', 'click');">New User</button>
 
 		<p class="facebookLogin">
 			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
@@ -38,4 +54,40 @@
 
 		</div>
 	</body>
+
+	{{else}}
+
+	<body>
+
+		<div id="logo">
+			<!--<img src="images/triton.png"> -->
+		</div>
+
+		<form class = "box" action="/homeB">
+			<div class="login">
+
+			<h1>Login</h1>
+			<input type="text" name="" placeholder="Username" required>
+			<input type="password" name="" placeholder="Password" required>
+			<input type="submit" name="" value="Login">
+			<button type="button" onclick="ga('send', 'event', 'view_profile', 'click');">I'm New Here</button>
+
+		<p class="facebookLogin">
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
+		</p>
+
+		<div class="create">
+			<a href="create_account.html" id="createacc">Create Account</a>
+		</div>
+		<div class="forgot">
+			<a href="forgot_password.html" id="forgotpassword">Forgot Password?</a>
+		</div>
+		</form>
+
+		</div>
+	</body>
+
+	{{/if}}
+
 </html>
