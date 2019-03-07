@@ -186,6 +186,7 @@ p.answer {
   border-style: solid;
 	background: #F5F5F5;
 	width: 75%;
+	max-height: 500px;
 	margin-left: 100px;
   margin-right: 100px;
 	overflow-y: scroll;
