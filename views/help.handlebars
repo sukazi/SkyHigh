@@ -33,14 +33,14 @@ body{
   background: #34495e
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background: #E0FFFF
-  overflow-y: scroll;
+label {
+  margin-left: 30px;
+  color:  #f2f2f2;
+}
+
+textarea {
+  margin-top: 10px;
+  margin-left: 100px;
 }
 
 </style>
@@ -48,13 +48,11 @@ body{
 
 <body>
 
-<div class = "header">
 	<h1> What seems to be the problem? </h1>
-</div>
 
 
-<div class = "header"> FAQ </div>
-<div class = "card">
+<h3> FAQ </h3>
+<div class = "container">
 	<ul>
   	<li>How do I sign up for a lesson?</li>
   		<p class = "answer"> Go to "Looking to Learn" from the home screen and pick an activity that you want to learn! </p>
@@ -70,13 +68,11 @@ body{
 <form id= "helpform" role="form" method="get" action="/add">
    <div class = "form-group">
    <div class = "col-75">
-	<label for="help"> Submit any questions or concerns to our help center: </label>
-    <textarea type ="text" class="form-control" id="help" placeholder="I need help with..." help="help" style="height: 100px"></textarea>
+	<label style="font-size: 30px;" for="help"> Submit any questions or concerns to our help center: </label>
+    <textarea type ="text" class="form-control" id="help" placeholder="I need help with..." help="help" style="height: 200px"></textarea>
 	<div class="row">
       <div class = "button">
-      <button id = "newPage1">
-    <a href="/help" class="click">Submit</a>
-  </button>
+    <a href="/help" style="font-size: 30px" class="click">Submit</a>
   </div>
 </div>
 </form>
