@@ -5,18 +5,56 @@
 	<link rel="stylesheet" type="text/css" href= "/css/HomeScreen.css">
 	<script src="/js/app.js" type=:"text/javascript" > </script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e
+}
+
+.bio {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  max-height: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background: white
+}
+
+.header {
+  margin: 100px;
+  opacity: .5;
+  color: white;
+  font-size: 50px;
+}
+
+.buttonForm {
+  background-color: #008CBA; /* Blue */
+  border: solid;
+  border-color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+</style>
 
 </head>
 <body>
 
 <div class="navbar">
-  <a href="/edit"><i class="fa fa-fw fa-edit"></i> Edit</a> 
-  <a href="/"><i class="fa fa-fw fa-user"></i> Logout</a>
+  <a href="/edit"><i style="font-size:40px;" class="fa fa-fw fa-edit"></i> Edit</a> 
+  <a href="/"><i style="font-size:40px;" class="fa fa-fw fa-user"></i> Logout</a>
 </div>
 
 <h1> Profile </h1> 
 
-<div class = "container">
+<div class = "bio">
     <img src = /images/profile.pic class = "hire-pic">
       <div class = "ProfileBox">
       	<h4> Name </h4>
@@ -30,23 +68,22 @@
     </div>
 </div>
 
-<div class = "container">
-	<h3> Learning History </h3>
+<div class = "bio">
+	<h1> Learning History </h1>
 	<div class = "BioBox">
         <div class = "bio"> No current learning history </div>
       </div>
-	<h3> Teaching History </h3>
+	<h1> Teaching History </h1>
 	<div class = "BioBox">
         <div class = "bio"> No current teaching history </div>
       </div>
 </div>
 
 
-    <div>
-  	<button class="button" id="newPage1" >
-  		<a href= "/home" class="button">Home</a>
-  	</button>
+ <!--   <div class="buttonForm">
+  		<a href= "/home">Home</a>
   </div>
+-->
 
 
 
@@ -103,3 +140,4 @@ body {margin:0;}
 
 </body>
 </html>
+
