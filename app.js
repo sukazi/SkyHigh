@@ -25,6 +25,9 @@ var hirelink = require('./routes/hirelink');
 var hiresubmit = require('./routes/hiresubmit');
 var edit = require('./routes/edit');
 var homeB = require('./routes/homeB');
+var createaccount = require('./routes/createaccount');
+var forgotpassword = require('./routes/forgotpassword');
+var addactivity = require('./routes/addactivity');
 
 var app = express();
 
@@ -55,17 +58,20 @@ app.get('/', index.view);
 
 
 //Suha's routes to other files
-app.get('/learn', activitybutton.view)
-app.get('/teach', teachbutton.view)
-app.get('/profile', profilebutton.view)
-app.get('/home', homebutton.view)
-app.get('/tennis', tennislink.view)
-app.get('/submit', submitbutton.view)
-app.get('/help', helpbutton.view)
-app.get('/hire', hirelink.view)
-app.get('/hiresubmit', hiresubmit.view)
-app.get('/edit',edit.view)
-app.get('/homeB',homeB.view)
+app.get('/learn', activitybutton.view);
+app.get('/teach', teachbutton.view);
+app.get('/profile', profilebutton.view);
+app.get('/home', homebutton.view);
+app.get('/tennis', tennislink.view);
+app.get('/submit', submitbutton.view);
+app.get('/help', helpbutton.view);
+app.get('/hire', hirelink.view);
+app.get('/hiresubmit', hiresubmit.view);
+app.get('/edit',edit.view);
+app.get('/homeB',homeB.view);
+app.get('/signup', createaccount.view);
+app.get('/forgotpassword', forgotpassword.view);
+app.get('/newActivity',addactivity.view);
 
 
 http.createServer(app).listen(app.get('port'), function(){

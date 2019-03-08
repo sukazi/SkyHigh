@@ -36,7 +36,7 @@ body{
 	min-width:600px;
 	max-width:2000px;
 	background-color: #1a426b;
-	background-image: linear-gradient(white,#023160);
+	background-image: linear-gradient(#1a426b,#1a426b);
 }
 
 h1{

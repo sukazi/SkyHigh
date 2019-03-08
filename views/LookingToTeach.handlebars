@@ -2,8 +2,69 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Looking To Teach</title>
-	<link rel="stylesheet" type="text/css" href= "/css/HomeScreen.css">
+	<link rel="stylesheet" type="text/css" href= "/css/nav-bar.css">
 	<script src="/js/app.js" type=:"text/javascript" > </script>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color:#1a426b;
+}
+
+
+label, h3{
+color: white;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 20px;
+  color: #808080 ;
+  border-radius: 24px;
+  border: 2px solid #f1c40f;
+  background-color:black;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+input[type=submit] {
+  background-color: #023160;
+  color: white;
+  padding: 20px 25px;
+  border: 2px solid #2ecc71;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius:25px;
+}
+
+input[type=submit]:hover {
+  background-color: #2ecc71;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 25%;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius:25px;
+}
+</style>
 
 </head>
 
@@ -26,8 +87,41 @@
             </ul>
         </nav>
 
+<!-- FORM -->
 
-  <div class = "header">
+        <div class="container">
+          <form action="/submit">
+  
+          <h3>INSTRUCTOR FORM</h3>
+  
+          <label for="skill">Skill</label>
+          <select id="activity" placeholder="Choose a Skill">
+            <option value="art"> Art </option>
+            <option value="australia">Academics</option>
+            <option value="canada">Music</option>
+            <option value="usa">Sports</option>
+            <option value="usa">Other</option>
+          </select>
+    
+          <label for="fname">If Other: </label>
+          <input type="text" id="fname" placeholder="Other skill..">
+
+          <label for="lname">Practice Location</label>
+          <input type="text" id="lname" placeholder="Location.." required>
+
+          <label for="lname">Rate</label>
+          <input type="text" id="lname" placeholder="$/hour" required>
+
+          <label for="subject">Bio</label>
+          <textarea id="subject" name="subject" placeholder="Tell us about yourself!" style="height:200px"></textarea>
+
+          <input type="submit" value="Submit" href="/submit">
+          </form>
+        </div>
+
+<!--
+
+  <div class = "header"> </div>
 	<h1> Become a Tutor </h1>
 
   <div class = "bigContainer">
@@ -90,6 +184,10 @@
           <a href= "/submit" class="click">Submit</a>
         </button>
     </div>
+
+
+
+  -->
 	
         <script src="https://code.jquery.com/jquery.js"></script>
   <!-- Include all compiled plugins (blelow), or include individual files as needed -->
