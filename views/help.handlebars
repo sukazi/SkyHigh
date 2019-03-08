@@ -1,140 +1,120 @@
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Home Page</title>
-	<link rel="stylesheet" type="text/css" href= "/css/HomeScreen.css">
-	<script src="/js/app.js" type=:"text/javascript" > </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+ <title>Help Page</title>
+  <link rel="stylesheet" type="text/css" href= "/css/nav-bar.css">
+  <script src="/js/app.js" type=:"text/javascript" > </script>
+
 <style>
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color:#1a426b;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
+
+label, h3{
+color: white;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+#answer, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 20px;
+  color: #808080 ;
+  border-radius: 24px;
+  border: 2px solid #f1c40f;
+  background-color:black;
+  display: block;
 }
 
-body{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #34495e
+a{
+  text-decoration: none;
+  color:white;
 }
 
-label {
-  margin-left: 30px;
-  color:  #f2f2f2;
+input[type=submit] {
+  background-color: #023160;
+  color: white;
+  padding: 20px 25px;
+  border: 2px solid #2ecc71;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius:25px;
 }
 
-textarea {
-  margin-top: 10px;
-  margin-left: 100px;
+input[type=submit]:hover {
+  background-color: #2ecc71;
 }
 
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 10%;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius:25px;
+}
 </style>
+
 </head>
 
 <body>
 
-	<h1> What seems to be the problem? </h1>
+  <!-- NAVIGATION BAR AT THE TOP -->
+   
+        <nav>
+         <div id="logo"><img src = "images/onlyLogo.png"></div>
 
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="/help">Help</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </nav>
 
-<h3> FAQ </h3>
-<div class = "container">
-	<ul>
-  	<li>How do I sign up for a lesson?</li>
-  		<p class = "answer"> Go to "Looking to Learn" from the home screen and pick an activity that you want to learn! </p>
-  	<li>How do I pay for a lesson?</li>
-  		<p class = "answer"> Go to your profile from the home screen and look through your "Learning History" to see any lessons that still need payment!</p>
-  	<li>How do I review a lesson?</li>
-  		<p class = "answer"> Go to your profile from the home screen and look through your "Learning History" to review any past lessons!</p>
-  	<li>How do I send a teacher a message?</li>
-  		<p class = "answer"> You can email them through our "Hiring Screen". To get there, go to "Looking to Teach", select an activity and a teacher and then click "Hire"!</p>
-</ul>
-</div>
-<h3>Still have questions?</h3>
-<form id= "helpform" role="form" method="get" action="/add">
-   <div class = "form-group">
-   <div class = "col-75">
-	<label style="font-size: 30px;" for="help"> Submit any questions or concerns to our help center: </label>
-    <textarea type ="text" class="form-control" id="help" placeholder="I need help with..." help="help" style="height: 200px"></textarea>
-	<div class="row">
-      <div class = "button">
-    <a href="/help" style="font-size: 30px" class="click">Submit</a>
+  <div class="container">
+    <form action="/qSubmit">
+          <h3>FAQ</h3>
+
+          <label id="question">How do I sign up for a lesson? </label>
+          <label id="answer">Go to "Looking to Learn" from the home screen and pick an activity that you want to learn! </label>
+
+          <label id="question">How do I pay for a lesson? </label>
+          <label id="answer">Go to your profile from the home screen and look through your "Learning History" to see any lessons that still need payment! </label>
+
+          <label id="question">How do I review a lesson? </label>
+          <label id="answer">Go to your profile from the home screen and look through your "Learning History" to review any past lessons! </label>
+
+          <label id="question">How do I send a teacher a message? </label>
+          <label id="answer">You can email them through our "Hiring Screen". To get there, go to "Looking to Teach", select an activity and a teacher and then click "Hire"! </label>
+
+          <label>Please submit additional inquiries below!</label>
+          <textarea id="subject" name="subject" placeholder="How do I...?" style="height:200px"></textarea>
+
+          <input type="submit" value="Submit" href="/qSubmit">
+
+    </form>
   </div>
-</div>
-</form>
 
-<!--
-<div class ="button" id = "button2">
-        <button id="newPage1" >
-          <a href= "/home" class="click">Back</a>
-        </button>
-        <button id="newPage1" >
-          <a href= "/home" class="click">Home</a>
-        </button>
-     </div>
-   -->
-
- <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
   <!-- Include all compiled plugins (blelow), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
-
-  <!--NAV bar at the bottom -->
-
-  <div class="icon-bar">
-  <a class="active" href="/home"><i class="fa fa-home fa-2x"></i></a> 
-  <a href="/profile"><i class="fa fa-user-circle fa-2x"></i></a> 
-  <a href="#"><i class="fa fa-history fa-2x"></i></a> 
-  <a href="/help"><i class="fa fa-question fa-2x"></i></a>
-</div>
-
-
-  <style>
-body {margin:0;}
-
-.icon-bar {
-  width: 100%;
-  height: 7%;
-  background-color: black;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
-}
-
-.icon-bar a {
-  float: left;
-  width: 25%;
-  height: 100%;
-  text-align: center;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
-}
-
-.icon-bar a:hover {
-  background-color:rgb(21, 31, 117);
-  height: 100%;
-}
-
-.active {
-  background-color: rgb(18, 39, 228);
-  height: 100%;
-}
-</style>
   
 </body>
 </html>

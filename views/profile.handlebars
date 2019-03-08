@@ -1,143 +1,226 @@
+<!doctype html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Home Page</title>
-	<link rel="stylesheet" type="text/css" href= "/css/HomeScreen.css">
-	<script src="/js/app.js" type=:"text/javascript" > </script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #34495e
-}
+  <head>
+    <title> hirescreen </title>
+    <meta charset="UTF-8">
+    <link rel ="stylesheet" type="text/css" href = "/css/nav-bar.css">
+    <script src="/js/app.js" type=:"text/javascript" > </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-.bio {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 900px;
-  max-height: 500px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background: white
-}
+    <style>
 
-.header {
-  margin: 100px;
-  opacity: .5;
-  color: white;
-  font-size: 50px;
-}
+      body{
+          background-color: #1a426b;
+      }
 
-.buttonForm {
-  background-color: #008CBA; /* Blue */
-  border: solid;
-  border-color: white;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  margin-top: 50px;
-  margin-right: 50px;
-}
-</style>
+    .user{
+        background-color: #282828;
+        font-size: 30px;
+        font-weight: bold;
+        display: block; 
+        text-align:center;
+        z-index: 1;
+     }
+    .user img{
+        border-radius: 150px;
+        display: inline-block;
+        margin-top:80px;
+    } 
+    h1{
+      position: relative;
+        bottom: 60px;
+    }
+    h1,h2{
+        color: white;
+        display: block;
+        text-align:center;
+    }
+    
+    .container {
+        border-radius: 5px;
+        background-color: black;
+        padding: 20px 20px; 
+        width: 80%; 
+        position: absolute; 
+        z-index: -1; 
+        left: 8%;
+        top: 30%;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius:25px;
+        padding-top: 40px; 
+    } 
+    .icons{
+        text-align: center;
+    }
 
-</head>
-<body>
+    a {
+        text-decoration: none;
+        font-size: 50px;
+        display: inline-block;
+        padding: 0px 10px;
+    }
+      #twitter{
+          color: #38A1F3;
+      }
+      #fb{
+          color: #4267b2;
+      }
+      .user-info{
+          padding-top:50px;
+          display: inline-block;
+          z-index: 1;
+      }
+      .starBox{
+          display: inline;
+          z-index: 1;
+          color:gray;
+      }
+      .checked{
+        color:orange;
+      }
+      .container label{
+          color:white;
+          font-size: 35px;
+      }  
+      .Q{
+        margin-right: 15px;
+      }
+      .distance, .rate{
+        margin: 20px 0;
+      }
+      .response{
+        color: #808080;
+      }
+      .BioBox{
+        z-index: 1;
+        color: white;
+        border: 2px solid #f1c40f;
+        border-radius:25px;
+        margin: 40px 0;
+      }
+      /*
+      .history{
+        border-radius: 5px;
+        background-color: white;
+        padding: 20px 20px; 
+        width: 80%; 
+        position: absolute; 
+        z-index: 3; 
+        left: 8%;
+        top: 66%;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius:25px;
+        padding-top: 40px; 
+        text-align:center;
+      }
+      */
+      #teach{
+        border-radius: 5px;
+        background-color: white;
+        padding: 20px 20px; 
+        width: 80%; 
+        position: absolute; 
+        z-index: 3; 
+        left: 52%;
+        top: 66%;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius:25px;
+        padding-top: 40px; 
+        text-align:center;
+      }
+      #learn{
+        border-radius: 5px;
+        background-color: white;
+        padding: 20px 20px; 
+        width: 80%; 
+        position: absolute; 
+        z-index: 3; 
+        left: 5%;
+        top: 66%;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius:25px;
+        padding-top: 40px; 
+        text-align:center;
 
-<div class="navbar">
-  <a href="/edit"><i style="font-size:40px;" class="fa fa-fw fa-edit"></i> Edit</a> 
-  <a href="/"><i style="font-size:40px;" class="fa fa-fw fa-user"></i> Logout</a>
-</div>
+      }
+      .history img{
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+      }
+      .history h2{
+        color: black;
+      }
+      .history h4{
+        color: gray;
+      }
 
-<h1> Profile </h1> 
+    </style>
+  </head>
 
-<div class = "bio">
-    <img src = /images/profile.pic class = "hire-pic">
-      <div class = "ProfileBox">
-      	<h4> Name </h4>
-      <label class = "hire"> Location: </label>
-      <div class = "BioBox">
-        <div class = "distance"> 9500 Gilman Drive La Jolla, CA 92120 </div>
-      </div>
-      <div class = "BioBox">
-        <div class = "bio"> Insert personal bio Insert player bio dfndjasfkbsabkfhs lnkbv nsalnkbsjadl fkbjsadlikbsajl dkoasfjnv sakpdoji [pskoaDJWSI [KPSOJADSI kdsoji pkadosjin akodjsin kpdojaisfInsert player bio dfndjasfkbsabkfhs lnkbv nsalnkbsjadl fkbjsadlikbsajl dkoasfjnv sakpdoji [pskoaDJWSI [KPSOJADSI kdsoji pkadosjin akodjsin kpdojaisfInsert player bio dfndjasfkbsabkfhs lnkbv nsalnkbsjadl fkbjsadlikbsajl dkoasfjnv sakpdoji [pskoaDJWSI [KPSOJADSI kdsoji pkadosjin akodjsin kpdojaisf </div>
-      </div>
-    </div>
-</div>
+  <body>
+    <!-- NAVIGATION BAR AT THE TOP -->
+   
+    <nav>
+       <div id="logo"><img src = "images/onlyLogo.png"></div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+          <ul class="menu">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="/help">Help</a></li>
+            <li><a href="/">Logout</a></li>
+          </ul>
+    </nav>
 
-<div class = "bio">
-	<h1> Learning History </h1>
-	<div class = "BioBox">
-        <div class = "bio"> No current learning history </div>
-      </div>
-	<h1> Teaching History </h1>
-	<div class = "BioBox">
-        <div class = "bio"> No current teaching history </div>
-      </div>
-</div>
-
-
- <!--   <div class="buttonForm">
-  		<a href= "/home">Home</a>
+    <div class="user">
+        <img src = /images/michael_scott.jpg >
+        <h1> Michael Scott </h1>
   </div>
--->
 
+  <div class="container">
+    <h2> Contact </h2>
+        <div class="icons" style="margin: 24px 0;">
+            <a href="#" id="twitter"><i class="fab fa-twitter "></i></a>
+            <a href="#" id="fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" id="message"><i class="far fa-envelope" aria-hidden="true"></i></a>
+        </div>
 
+        <div class="user-info">
 
+        <div class="distance">
+          <label class="Q"> Location:  </label>
+          <label class="response"> 9500 Gilman Drive. La Jolla, CA 92120</label>
+        </div>
 
-<script src="https://code.jquery.com/jquery.js"></script>
-  <!-- Include all compiled plugins (blelow), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
+          <div class = "BioBox">
+            <p> Insert personal Bio</p>
+          </div>
+        </div>        
+  </div>
 
+  <div class="history">
+    
+    <div id="teach" style="width:40%; float:left">
+      <h2> Teaching History </h2>
+      <img src = /images/hourglass.png>
+      <h4> No Teaching History Yet!</h4>
 
-  <!--NAV bar at the bottom -->
+    </div>
 
-  <div class="icon-bar">
-  <a class="active" href="/home"><i class="fa fa-home fa-2x"></i></a> 
-  <a href="/profile"><i class="fa fa-user-circle fa-2x"></i></a> 
-  <a href="#"><i class="fa fa-history fa-2x"></i></a> 
-  <a href="/help"><i class="fa fa-question fa-2x"></i></a>
-</div>
+    <div id="learn" style="width:40%; float:right">
+      <h2> Learning History </h2>
+      <img src = /images/hourglass.png >
+      <h4> No Learning History Yet!</h4>
+    </div>
+  </div>
 
+  </body>
 
-  <style>
-body {margin:0;}
-
-.icon-bar {
-  width: 100%;
-  height: 7%;
-  background-color: black;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
-}
-
-.icon-bar a {
-  float: left;
-  width: 25%;
-  height: 100%;
-  text-align: center;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
-}
-
-.icon-bar a:hover {
-  background-color:rgb(21, 31, 117);
-  height: 100%;
-}
-
-.active {
-  background-color: rgb(18, 39, 228);
-  height: 100%;
-}
-</style>
-
-
-</body>
 </html>
-

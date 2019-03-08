@@ -31,7 +31,8 @@ var homeB = require('./routes/homeB');
 var createaccount = require('./routes/createaccount');
 var forgotpassword = require('./routes/forgotpassword');
 var addactivity = require('./routes/addactivity');
-var newaccountORpassword = require('./routes/newaccountORpassword')
+var newaccountORpassword = require('./routes/newaccountORpassword');
+var qSubmit = require('./routes/qSubmit');
 
 var app = express();
 
@@ -83,6 +84,7 @@ app.get('/forgotpassword', forgotpassword.view);
 app.get('/newActivity',addactivity.view);
 //app.get('/homeB/viewAlt', homeB.viewAlt)
 app.get('/thankyou',newaccountORpassword.view)
+app.get('/qSubmit',qSubmit.view)
 
 
 http.createServer(app).listen(app.get('port'), function(){

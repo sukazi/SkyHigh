@@ -49,21 +49,23 @@ a {
 
 .dropdown li {
     color: #fff;
-    background: darkorange;
+    background: #000;
     display: block;
     padding: 1rem;
     position: relative;
     text-decoration: none;
     transition-duration: 0.5s;
+    width:300px;
 }
   
 .dropdown li a {
   color: #fff;
+  font-size: 30px;
 }
 
 .dropdown li:hover,
 .dropdown li:focus-within {
-    background: red;
+    background: #3042a5;
     cursor: pointer;
 }
 
@@ -113,10 +115,14 @@ a {
   background-color: #023160;
   color: white;
   padding: 16px;
-  font-size: 16px;
+  font-size: 50px;
   border: none;
   cursor: pointer;
-  border-radius:24px;
+  border-radius:25px;
+  height:100px;
+  width:300px;
+  margin-top:100px;
+  border:2px solid black;
 }
 
 /* color change upon hover and click */

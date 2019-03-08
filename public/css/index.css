@@ -6,10 +6,10 @@ body{
 }
 #logo img {
   position: fixed;
-  width: 100px;
-  height: 100px;
-  top: 20%;
-  left: 50%;
+  width: 170px;
+  height: 200px;
+  top: 5%;
+  left: 27%;
   margin-top: -100px; /* Negative half of height. */
   margin-left: -250px; /* Negative half of width. */
 }

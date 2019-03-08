@@ -1,98 +1,110 @@
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Looking To Teach</title>
-	<link rel="stylesheet" type="text/css" href= "/css/HomeScreen.css">
-	<script src="/js/app.js" type=:"text/javascript" > </script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>Hired Instructor</title>
+  <link rel="stylesheet" type="text/css" href= "/css/nav-bar.css">
+  <script src="/js/app.js" type=:"text/javascript" > </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style>
+  <style>
+    h1,h3{
+      color:white;
+      z-index: 1;
+    }
+    h1{
+      margin-top: 40px;
+    }
+    h3{
+      margin: 40px auto;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: black;
+      padding: 20px;
+      width: 60%;
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      top: 25%;
+      font-size: 30px;
+      font-weight: bold;
+      border-radius:25px;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
 
-body{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #34495e
-}
+    button{
+      background-color: #023160;
+      color: white;
+      padding: 20px 25px;
+      border: 2px solid #2ecc71;
+      border-radius: 4px;
+      cursor: pointer;
+      border-radius:25px;
+      width: 200px;
+      float: left;
+      /*
+      FOR NORMAL SCREEN SIZE
+      margin: auto 140px;*/
+      margin: auto 46px;
+    }
 
-.box {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 900px;
-  max-height: 500px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  margin-top: 300px;
-  background: white
-}
+    button:hover {
+      background-color: #2ecc71;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+          box-sizing: border-box;
+        background-color:#1a426b;
+    }
 
+    @media only screen and (max-width: 800px) {
+          button {
+            margin: auto 46px;
+      }
+    }
 
-</style>
-
+  </style>
 </head>
 
 <body>
-  <div class = "header">
-	<h1> Hiring </h1>
 
-	<div class ="box">
-		<h4>Message successfully sent!</h4>
+<!-- NAVIGATION BAR AT THE TOP -->
+   
+        <nav>
+         <div id="logo"><img src = "images/onlyLogo.png"></div>
 
-		<div class = "button">
-			<button style="font-size:30px" >
-				<a href="/home" class="click"> Return Home </a>
-			</button>
-	</div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="/help">Help</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </nav>
 
+  
+  <div class ="container">
+    <h1>Thank You!</h1>
+    <h3> Message was submitted successfully! </h3>
+    <div class = "button">
+      <button id = "home-button">
+        <a href="/home" class="click"> Return Home </a>
+      </button>
+      <button id = "again-button">
+        <a href= "/tennis" class="click">Browse more Instructors</a>
+      </button>
+    </div>
+  </div>
 
  <script src="https://code.jquery.com/jquery.js"></script>
   <!-- Include all compiled plugins (blelow), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
-  </div>
   
-  <!--NAV bar at the bottom -->
-
-  <div class="icon-bar">
-  <a class="active" href="/home"><i class="fa fa-home fa-2x"></i></a> 
-  <a href="/profile"><i class="fa fa-user-circle fa-2x"></i></a> 
-  <a href="#"><i class="fa fa-history fa-2x"></i></a> 
-  <a href="/help"><i class="fa fa-question fa-2x"></i></a>
-</div>
-
-
-  <style>
-body {margin:0;}
-
-.icon-bar {
-  width: 100%;
-  height: 7%;
-  background-color: black;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
-}
-
-.icon-bar a {
-  float: left;
-  width: 25%;
-  height: 100%;
-  text-align: center;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
-}
-
-.icon-bar a:hover {
-  background-color:rgb(21, 31, 117);
-  height: 100%;
-}
-
-.active {
-  background-color: rgb(18, 39, 228);
-  height: 100%;
-}
-</style>
-
 </body>
 </html>

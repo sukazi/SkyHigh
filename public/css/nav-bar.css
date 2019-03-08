@@ -1,16 +1,10 @@
 /* Top Menu Bar */
 
-/*
+
 body {
-  background: #212121;
-  font-size:22px;
-  line-height: 32px;
-  color: #ffffff;
   margin: 0;
-  padding: 0;
-  word-wrap:break-word !important;
-  font-family: 'Open Sans', sans-serif;
   }
+/*
 
 h1 {
   font-size: 60px;
@@ -44,7 +38,7 @@ h1 {
   }
 
 #container {
-  margin: 0 auto;
+  margin: 0 0;
   max-width: 890px;
 }
 
@@ -64,6 +58,12 @@ nav {
   background-color: black;
   height: 100;
 }
+nav img{
+      width:90px;
+      height:90px;
+      margin: 7px 0px;
+      display: inline;
+    }
 
 #logo {
   display: block;
