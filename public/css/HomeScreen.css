@@ -184,8 +184,9 @@ p.answer {
 .container {
 	border-color: #239090;
   border-style: solid;
-	background: #d6f5f5;
+	background: #F5F5F5;
 	width: 75%;
+	max-height: 500px;
 	margin-left: 100px;
   margin-right: 100px;
 	overflow-y: scroll;

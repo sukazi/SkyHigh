@@ -9,6 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var homepage = require('./routes/homepage');
 // Example route
 // var user = require('./routes/user');
 
@@ -21,13 +22,16 @@ var homebutton = require('./routes/homebutton');
 var tennislink = require('./routes/tennislink');
 var submitbutton = require('./routes/submitbutton');
 var helpbutton = require('./routes/helpbutton');
-var hirelink = require('./routes/hirelink');
+var hirelink1 = require('./routes/hirelink1');
+var hirelink2 = require('./routes/hirelink2');
+var hirelink3 = require('./routes/hirelink3');
 var hiresubmit = require('./routes/hiresubmit');
 var edit = require('./routes/edit');
 var homeB = require('./routes/homeB');
 var createaccount = require('./routes/createaccount');
 var forgotpassword = require('./routes/forgotpassword');
 var addactivity = require('./routes/addactivity');
+var newaccountORpassword = require('./routes/newaccountORpassword')
 
 var app = express();
 
@@ -53,6 +57,9 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+//app.get('/', homepage.view)
+//app.get('/viewAlt', homepage.viewAlt)
+app.get('/viewAlt', index.viewAlt)
 // Example route
 // app.get('/users', user.list);
 
@@ -65,13 +72,17 @@ app.get('/home', homebutton.view);
 app.get('/tennis', tennislink.view);
 app.get('/submit', submitbutton.view);
 app.get('/help', helpbutton.view);
-app.get('/hire', hirelink.view);
+app.get('/hire1', hirelink2.view);
+app.get('/hire2', hirelink2.view);
+app.get('/hire3', hirelink2.view);
 app.get('/hiresubmit', hiresubmit.view);
 app.get('/edit',edit.view);
 app.get('/homeB',homeB.view);
 app.get('/signup', createaccount.view);
 app.get('/forgotpassword', forgotpassword.view);
 app.get('/newActivity',addactivity.view);
+//app.get('/homeB/viewAlt', homeB.viewAlt)
+app.get('/thankyou',newaccountORpassword.view)
 
 
 http.createServer(app).listen(app.get('port'), function(){

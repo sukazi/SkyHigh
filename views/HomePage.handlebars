@@ -1,14 +1,68 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Home Page</title>
-	<link rel="stylesheet" type="text/css" href= "/css/homePage.css">
+	<title>Home Page A</title>
+	<link rel="stylesheet" type="text/css" href= "/css/h.css">
+  <link rel="stylesheet" type="text/css" href= "/css/nav-bar.css">
 	<script src="/js/app.js" type=:"text/javascript" > </script>
   <script src="/js/homePage.js" type=:"text/javascript"> </script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+  <style>
+     h1,h3{
+      color:white;
+    }
+
+    h1{
+      margin: 50px auto;
+    }
+    .container {
+      border-radius: 5px;
+      background-color: black;
+      padding: 20px;
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      top: 25%;
+      font-size: 30px;
+      font-weight: bold;
+      border-radius:25px;
+      /*styling elements that need to be made responsive */
+      width: 60%;
+      height: 30%;
+    }
+
+    a{
+        text-decoration: none;
+        color:white;
+    }
+
+    button{
+      background-color: #023160;
+      color: white;
+      padding: 20px 25px;
+      border: 2px solid #2ecc71;
+      border-radius: 4px;
+      cursor: pointer;
+      border-radius:25px;
+      display:block;
+      text-align: center;
+      /*styling elements that need to be make responsive*/
+      width: 300px;
+      margin: 19% auto;
+    }
+
+    button:hover {
+      background-color: #2ecc71;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+          box-sizing: border-box;
+        background-color:#1a426b;
+    }
+  </style>
 </head>
 
 <body onload="startTime()">
@@ -31,25 +85,20 @@
             </ul>
         </nav>
 
-
-      <div class = "profile"> 
-        <!-- Turning profile pic into link -->
-        <a href = "/profile"> <img src = /images/profile.pic class = "img" > </a>
-        <h3> {{name}} </h3>
-      </div>
-      
         
-<div class="container-fluid">
-    
-      <div type="button" class = "button" id=button1>
-          <a href="/teach" class="button">  Teach</a>
-        
-      </div>
+<div class="container">
+      <div class = "button">
 
-      <div type = "button" class="button" id=button2>
-          <a href="/learn" class="button">Learn</a>
-      </div>
-  </div>
+        <button id = "home-button">
+          <a href="/teach" id="button1"> Teach </a>
+        </button>
+
+        <button id = "again-button">
+          <a href= "/learn" id="button2"> Learn </a>
+        </button>
+
+    </div>
+</div>
   
 <!--
       <div class = "calendar-body">

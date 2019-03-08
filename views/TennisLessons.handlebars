@@ -94,107 +94,122 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<script src="/js/app.js" type=:"text/javascript" > </script>
-  <link rel="stylesheet" type="text/css" href= "/css/nav-bar.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #34495e
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background: white
-}
-.title {
-  color: grey;
-  font-size: 18px;
-}
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-h2   {color: white;}
-button:hover, a:hover {
-  opacity: 0.7;
-}
-</style>
-</head>
-<head>
-<!-- Font Awesome Icon Library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.checked {
-  color: orange;
-}
-</style>
-</head>
+  <head>
 
-<head>
-  <style>
-  .dropbtn {
-  background-color: white;
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  font-size: 18px;
-}
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  right: 0px;
-}
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {opacity: 0.7;}
-</style>
-</head>
-<body>
+    <script src="/js/app.js" type=:"text/javascript" > </script>
+    <link rel="stylesheet" type="text/css" href= "/css/nav-bar.css">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+      .container{
+        border-radius: 5px;
+        background-color: black;
+        padding: 20px;
+        width: 60%;
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        top: 25%;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius:25px;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: #1a426b;
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        background: white
+      }
+      .title {
+        color: grey;
+        font-size: 18px;
+      }
+      button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #023160;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 22px;
+      }
+      #twitter{
+        color: #38A1F3;
+      }
+      #fb{
+        color: #4267b2;
+      }
+      h2 {
+        color: white;
+        text-align:center;
+        font-size: 50px;
+        margin-top: 80px;
+      }
+      button:hover, a:hover {
+        opacity: 0.7;
+      }
+      .checked {
+        color: orange;
+      }
+      .dropbtn {
+        background-color: white;
+        color: black;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 18px;
+      }
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 0px;
+      }
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: #ddd;}
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {display: block;}
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {opacity: 0.7;}
+
+    </style>
+    </head>
+    <body>
 
 <!-- NAVIGATION BAR AT THE TOP -->
    
@@ -206,7 +221,7 @@ button:hover, a:hover {
         <label for="drop" class="toggle">Menu</label>
         <input type="checkbox" id="drop" />
             <ul class="menu">
-                <li><a href="/homeB">Home</a></li>
+                <li><a href="/home">Home</a></li>
                 <li><a href="/profile">Profile</a></li>
                 <li><a href="#">History</a></li>
                 <li><a href="/help">Help</a></li>
@@ -225,55 +240,59 @@ button:hover, a:hover {
 </div>
 -->
 
-<h2 style="text-align:center">Instructors</h2>
+    <h2>Instructors</h2>
 
-<div class="card">
-  <img src="/images/blake_baumgartner.jpg" alt="John" style="width:100%">
-  <h1>Michael Scarn</h1>
-  <p class="title">Computer Engineer | 0.1 Miles | $7/hour</p>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star"></span>
-  <span class="fa fa-star"></span>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-facebook"></i></a>
-  </div>
-  <p><button>Contact</button></p>
-</div>
+    <div class="container">
 
-<div class="card">
-  <img src= "/images/marc_isaia.jpg" alt="John" style="width:100%">
-  <h1>Marc Isaia</h1>
-  <p class="title">Political Science | 1.2 Miles | $5/hour</p>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star"></span>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-facebook"></i></a>
-  </div>
-  <a href="/hire"> <p><button>Contact</button></p> </a>
-</div>
+        <div class="card">
+          <img src="/images/blake_baumgartner.jpg" alt="John" style="width:100%">
+          <h1>Michael Scarn</h1>
+          <p class="title">Computer Engineer | 0.1 Miles | $7/hour</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <div style="margin: 24px 0;">
+            <a href="#" id="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" id="fb"><i class="fa fa-facebook"></i></a>
+          </div>
+          <a href="/hire1"> <p><button>Contact</button></p> </a>
+        </div>
 
-<div class="card">
-  <img src="/images/roger_federer.jpg" alt="John" style="width:100%">
-  <h1>Roger Federer</h1>
-  <p class="title">Computer Science | 0.7 Miles | $9/hour</p>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star checked"></span>
-  <span class="fa fa-star"></span>
-  <span class="fa fa-star"></span>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-facebook"></i></a>
-  </div>
-  <p><button>Contact</button></p>
-</div>
+        <div class="card">
+          <img src= "/images/marc_isaia.jpg" alt="John" style="width:100%">
+          <h1>Marc Isaia</h1>
+          <p class="title">Political Science | 1.2 Miles | $5/hour</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <div style="margin: 24px 0;">
+            <a href="#" id="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" id="fb"><i class="fa fa-facebook"></i></a>
+          </div>
+          <a href="/hire2"> <p><button>Contact</button></p> </a>
+        </div>
 
-</body>
+        <div class="card">
+          <img src="/images/roger_federer.jpg" alt="John" style="width:100%">
+          <h1>Roger Federer</h1>
+          <p class="title">Computer Science | 0.7 Miles | $9/hour</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <div style="margin: 24px 0;">
+            <a href="#" id="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" id="fb"><i class="fa fa-facebook"></i></a>
+          </div>
+          <a href="/hire3"> <p><button>Contact</button></p> </a>
+        </div>
+
+      </div>
+
+    </body>
 </html>
