@@ -8,6 +8,7 @@
 		{{> facebook}}
 	<script src="/js/facebook.js"></script>
 
+
 	<!-- Google Analytics -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -34,14 +35,13 @@
 			<div class="login">
 
 			<h1>Login</h1>
-		  <input type="text" name="" placeholder="Username" required>
-			<input type="password" name="" placeholder="Password" required>
+		    <input type="text" name="fname" placeholder="Username" required>
+			<input type="password" name="pword" placeholder="Password" required>
 			<input type="submit" name="" value="Login">
 			<button type="button" onclick="ga('send', 'event', 'view_profile', 'click');">New User</button>
 
 		<p class="facebookLogin">
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-			</fb:login-button>
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
 		</p>
 
 		<div class="create">

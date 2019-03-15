@@ -35,6 +35,9 @@
   		  text-decoration: none;
   		  color:white;
 		}
+		.button{
+			text-align: center;
+		}
 
 		button{
 		  background-color: #023160;
@@ -44,12 +47,13 @@
 		  border-radius: 4px;
 		  cursor: pointer;
 		  border-radius:25px;
-		  width: 200px;
-		  float: left;
+		  width: 350px;
+		  font-size: 25px;
+		  display: inline-block;
 		  /*
 		  FOR NORMAL SCREEN SIZE
 		  margin: auto 140px;*/
-		  margin: auto 46px;
+		  margin: 15px auto;
 		}
 
 		button:hover {
@@ -61,11 +65,11 @@
   		  background-color:#1a426b;
 		}
 		img{
-      width:90px;
-      height:90px;
-      margin: 7px 0px;
-      display: inline;
-    }
+	      width:90px;
+	      height:90px;
+	      margin: 7px 0px;
+	      display: inline;
+	    }
 
 		@media only screen and (max-width: 800px) {
           button {
@@ -88,7 +92,7 @@
             <ul class="menu">
                 <li><a href="/home">Home</a></li>
                 <li><a href="/profile">Profile</a></li>
-                <li><a href="#">History</a></li>
+                <li><a href="/history">History</a></li>
                 <li><a href="/help">Help</a></li>
                 <li><a href="/">Logout</a></li>
             </ul>
@@ -103,7 +107,7 @@
 				<a href="/home" class="click"> Return Home </a>
 			</button>
 			<button id = "again-button">
-				<a href= "/teach" class="click">Submit another Listing</a>
+				<a href= "/teach" class="click">Submit Another Listing</a>
 			</button>
 		</div>
 	</div>

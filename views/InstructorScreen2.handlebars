@@ -148,7 +148,7 @@
 		  color:white;
 		}
 
-		input[type=submit] {
+		button {
 		  background-color: #023160;
 		  color: white;
 		  padding: 30px 40px;
@@ -158,9 +158,12 @@
 		  border-radius:25px;
 		  font-weight: bold;
 		  font-size: 30px;
+		  position: absolute;
+      		top:90%;
+      		left: 40%;
 		}
 
-		input[type=submit]:hover {
+		button:hover {
 		  background-color: #2ecc71;
 		}
 
@@ -212,7 +215,7 @@
           <ul class="menu">
             <li><a href="/home">Home</a></li>
             <li><a href="/profile">Profile</a></li>
-            <li><a href="#">History</a></li>
+            <li><a href="/history">History</a></li>
             <li><a href="/help">Help</a></li>
             <li><a href="/">Logout</a></li>
           </ul>
@@ -258,22 +261,9 @@
         </div>        
 	</div>
 
-	<div class="hire-box">
-
-		<form action="/hiresubmit">
-	       <h3> Hire Me </h3>
-	       	  <label for="subject">Message</label>
-	          <textarea placeholder="Hi, I saw your listing on SkyHigh..." style="height:100px"></textarea>
-
-	          <label for="fname">Name</label>
-	          <input type="text" id="fname" placeholder="Scott Klemmer" required>
-
-	          <label for="email">Email</label>
-	          <input type="text" id="lname" placeholder="----@ucsd.edu" required>
-
-	          <input type="submit" value="Hire" href="/hiresubmit">
-	    </form>
-	</div>
+	<button id = "home-button">
+          <a href="/hire" id="button1"> Hire </a>
+  </button>
 
   </body>
 

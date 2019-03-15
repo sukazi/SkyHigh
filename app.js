@@ -22,9 +22,9 @@ var homebutton = require('./routes/homebutton');
 var tennislink = require('./routes/tennislink');
 var submitbutton = require('./routes/submitbutton');
 var helpbutton = require('./routes/helpbutton');
-var hirelink1 = require('./routes/hirelink1');
-var hirelink2 = require('./routes/hirelink2');
-var hirelink3 = require('./routes/hirelink3');
+var instructorlink1 = require('./routes/instructorlink1');
+var instructorlink2 = require('./routes/instructorlink2');
+var instructorlink3 = require('./routes/instructorlink3');
 var hiresubmit = require('./routes/hiresubmit');
 var edit = require('./routes/edit');
 var homeB = require('./routes/homeB');
@@ -33,6 +33,8 @@ var forgotpassword = require('./routes/forgotpassword');
 var addactivity = require('./routes/addactivity');
 var newaccountORpassword = require('./routes/newaccountORpassword');
 var qSubmit = require('./routes/qSubmit');
+var history = require('./routes/history');
+var hire = require('./routes/hire');
 
 var app = express();
 
@@ -73,9 +75,9 @@ app.get('/home', homebutton.view);
 app.get('/tennis', tennislink.view);
 app.get('/submit', submitbutton.view);
 app.get('/help', helpbutton.view);
-app.get('/hire1', hirelink2.view);
-app.get('/hire2', hirelink2.view);
-app.get('/hire3', hirelink2.view);
+app.get('/instructor1', instructorlink1.view);
+app.get('/instructor2', instructorlink2.view);
+app.get('/instructor3', instructorlink3.view);
 app.get('/hiresubmit', hiresubmit.view);
 app.get('/edit',edit.view);
 app.get('/homeB',homeB.view);
@@ -83,8 +85,10 @@ app.get('/signup', createaccount.view);
 app.get('/forgotpassword', forgotpassword.view);
 app.get('/newActivity',addactivity.view);
 //app.get('/homeB/viewAlt', homeB.viewAlt)
-app.get('/thankyou',newaccountORpassword.view)
-app.get('/qSubmit',qSubmit.view)
+app.get('/thankyou',newaccountORpassword.view);
+app.get('/qSubmit',qSubmit.view);
+app.get('/history',history.view);
+app.get('/hire', hire.view);
 
 
 http.createServer(app).listen(app.get('port'), function(){
